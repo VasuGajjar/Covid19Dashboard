@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5">
+    <TextView
+        android:id="@+id/state_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:fontFamily="@font/bold"
+        android:text="State"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/confirmed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/regular"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginVertical="@dimen/_5sdp"/>
+
+    <TextView
+        android:id="@+id/active"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/regular"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginVertical="@dimen/_5sdp"/>
+
+    <TextView
+        android:id="@+id/recovered"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/regular"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginVertical="@dimen/_5sdp"/>
+</LinearLayout>
