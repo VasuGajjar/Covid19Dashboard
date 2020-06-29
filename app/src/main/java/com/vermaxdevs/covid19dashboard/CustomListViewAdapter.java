@@ -19,6 +19,12 @@ import static com.vermaxdevs.covid19dashboard.R.layout.custom_listview;
 public class CustomListViewAdapter extends ArrayAdapter {
     List list = new ArrayList();
 
+    @Override
+    public void clear() {
+        super.clear();
+        list.clear();
+    }
+
     public CustomListViewAdapter(@NonNull Context context, int resource) {
         super(context, resource);
     }
@@ -69,4 +75,6 @@ public class CustomListViewAdapter extends ArrayAdapter {
     static class StateHolder {
         TextView sName, confirmed, active, recovered;
     }
+
+
 }
